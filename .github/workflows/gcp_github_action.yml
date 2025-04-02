@@ -16,6 +16,7 @@ jobs:
           create_credentials_file: 'true'
           workload_identity_provider: 'projects/gcp-labs-3xo24suq/locations/global/workloadIdentityPools/iam-lab-7-gh-pool/providers/iam-lab-7-gh-pool-oidc-provider'
           service_account: 'iam-lab-7-target@gcp-labs-3xo24suq.iam.gserviceaccount.com'
+          activate_credentials_file: true
     - id: 'gcloud'
       name: 'gcloud'
       run: |-
