@@ -22,4 +22,4 @@ jobs:
         gcloud config set project gcp-labs-3xo24suq
         gcloud config set account 'iam-lab-7-target@gcp-labs-3xo24suq.iam.gserviceaccount.com'
         gcloud auth login --brief --cred-file="${{ steps.auth.outputs.credentials_file_path }}"
-        gcloud auth list
+        gcloud secrets list
